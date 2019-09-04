@@ -353,7 +353,17 @@
         <div class="abstract-content">
             #前言
 前几天看php手册&lt;匿名函数&gt;一章时,看到示例
-
+()
+&lt;?php
+echo preg_replace_callback(&#39;~-([a-z])~&#39;, function ($match) {
+    return strtoupper($match[1]);
+}, &#39;hello-world&#39;);
+// 输出 helloWorld
+?&gt;
+()
+初看时,对这三行代码有点懵…一时没转过来,没想明白为什么是这结果,这是为什么呢?
+#正则定界符
+其实刚开始是对 ‘-([a-z])‘ 比较懵,正则表达式虽然写了不少,但也仅限于使用时对照手册...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
