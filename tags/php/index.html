@@ -351,13 +351,11 @@
                 <span>preg_replace_callback工作原理</span>
         </a>
         <div class="abstract-content">
-            ##前言
-前几天看php手册&lt;匿名函数&gt;一章时,看到示例
+            前言前几天看php手册&lt;匿名函数&gt;一章时,看到示例
 123456&lt;?phpecho preg_replace_callback(&apos;~-([a-z])~&apos;, function ($match) &#123;    return strtoupper($match[1]);&#125;, &apos;hello-world&apos;);// 输出 helloWorld?&gt;
 
 初看时,对这三行代码有点懵…一时没转过来,没想明白为什么是这结果,这是为什么呢?
-##正则定界符
-其实刚开始是对 ‘-([a-z])‘ 比较懵,正则表达式虽然写了不少,...
+正则定界符其实刚开始是对 ‘-([a-z])‘ 比较懵,正则表达式虽然写了不少,但也仅限于使...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
